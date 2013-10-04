@@ -1,0 +1,20 @@
+#ifndef JSONParser_
+#define JSONParser_
+
+#include <arduino.h>
+#include <Stdio.h>
+
+class JSONParser {
+  private:
+   float JSONParserLevel;
+   String JSONParserStr; 
+   char JSONParserBuffer[30];
+   String data;
+
+  public:
+    JSONParser();
+    String generateJSONParser(int);
+    float readJSONParserSensor(int);
+};
+
+#endif
